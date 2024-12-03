@@ -1,13 +1,12 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
+import React from 'react'
+import EmployeeListComponent from './components/EmployeeListComponent'
 
-export default reportWebVitals;
+function App() {
+  return (
+    <div>
+        <EmployeeListComponent/>
+    </div>
+  )
+}
+
+export default App
